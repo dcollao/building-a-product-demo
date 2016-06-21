@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="building_a_product_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="LD6-Ma-Dia">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LD6-Ma-Dia" secondAttribute="height" multiplier="15:8" id="Rwn-sG-Nge"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my mind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zN6-PK-cqr">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhV-ui-R5Q">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="62e-9E-st1"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo consetetur sadipscing elitr, sed diam nonumy eirmod.</string>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7k-Hc-aSK">
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3NdGl0rY" translatesAutoresizingMaskIntoConstraints="NO" id="l4z-CD-qmP">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l4z-CD-qmP" secondAttribute="height" multiplier="350:45" id="svR-wO-k9W"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LD6-Ma-Dia" secondAttribute="trailing" id="0fZ-YS-gIm"/>
+                            <constraint firstItem="l4z-CD-qmP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-49" id="D9c-6h-jw8"/>
+                            <constraint firstItem="l4z-CD-qmP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6.5" id="F5U-20-C4p"/>
+                            <constraint firstItem="Y7k-Hc-aSK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9D-MC-55W"/>
+                            <constraint firstItem="zN6-PK-cqr" firstAttribute="top" secondItem="l4z-CD-qmP" secondAttribute="bottom" constant="28" id="N2E-OR-VbV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y7k-Hc-aSK" secondAttribute="bottom" constant="20" id="Rjk-6u-L0g"/>
+                            <constraint firstItem="LD6-Ma-Dia" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="aAe-5g-AIu"/>
+                            <constraint firstItem="LhV-ui-R5Q" firstAttribute="top" secondItem="zN6-PK-cqr" secondAttribute="bottom" constant="16" id="fKF-0H-Qo7"/>
+                            <constraint firstItem="LD6-Ma-Dia" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fZd-Og-R0G"/>
+                            <constraint firstItem="zN6-PK-cqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i7G-II-YJx"/>
+                            <constraint firstItem="LhV-ui-R5Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xnM-dF-TUh"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="23.199999999999999" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="3NdGl0rY" width="507" height="92"/>
+        <image name="wallpaper" width="1280" height="800"/>
+    </resources>
 </document>
